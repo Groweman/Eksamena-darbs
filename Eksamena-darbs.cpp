@@ -98,7 +98,7 @@ int main(){
 	
 	
 do{
-	cout<< "D.Kads bus si koda isa koda iznakums?"<<endl;
+	cout<< "D.Kads bus si isa koda iznakums?"<<endl;
 		cout<<"int x=0;\n{\nx++;\ncout<<x\n}while(x<5);"<< endl;
 		cout<<"*****************************"<<endl;
 	cout<< "1.01234 "<<endl;
@@ -269,9 +269,38 @@ do{
 	}while((ans < 1) || (ans > 4));
 	
 
-	
 
-cout<<score;
+do{
+	cout<< "J.Kads bus si isa koda iznakums?"<<endl;
+		cout<<"int x=0;\n{\nx++;\ncout<<x\n}while(x<=7);"<< endl;
+		cout<<"*****************************"<<endl;
+	cout<< "1.0123456 "<<endl;
+	cout<< "2.1234567 "<<endl;
+	cout<< "3.01234567 "<<endl;
+	cout<< "4.01234567 "<<endl;
+		cout<<"Atbilde: ";
+	cin>>ans;
+	
+	if((ans < 1) || (ans > 4)){
+		cout<< "Izvelities vienu no iespejam"<<endl;
+	cout<<"*****************************"<<endl;
+	}else{
+		if(ans==3 || ans==4){
+
+	score +=1;
+			cout<<"Paldies par atbildi!"<<endl;
+			cout<<"*****************************"<<endl;
+		}else{
+			cout<<"Paldies par atbildi!" <<endl;
+			cout<<"*****************************"<<endl;
+		}
+		
+	}
+	
+	}while((ans < 1) || (ans > 4));
+	
+cout<<"Tu esi atbildejis pareizi uz "<<score<<" jautajumiem!";
+
 
 return 0;
 	}
