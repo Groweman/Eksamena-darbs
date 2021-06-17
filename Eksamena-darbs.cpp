@@ -8,18 +8,18 @@ int main(){
 	score = 0;
 	
 	do{
-	cout<< "Kurs no atbilzu variantiem nav pareizs\n Jautajums: 2+2=?"<< endl;
-	cout<< "1. 4"<<endl;
-	cout<< "2. 8/2"<<endl;
-	cout<< "3. 4*1"<<endl;
-	cout<< "4. 9/3"<<endl;
+	cout<< "Do-while ir cikls"<< endl;
+	cout<< "1. Kas nostrada vismaz vienu reizi"<<endl;
+	cout<< "2. ar pecnosacijumu"<<endl;
+	cout<< "3. ar prieksnosacijumu"<<endl;
+	cout<< "4. nav cikls"<<endl;
 	cin>>ans;
 	
 	if((ans < 1) || (ans > 4)){
 		cout<< "Izvelities vienu no iespejam"<<endl;
 	cout<<"*****************************"<<endl;
 	}else{
-		if(ans==4){
+		if(ans==1 || ans==2){
 
 	score +=1;
 			cout<<"Paldies par atbildi!"<<endl;
@@ -33,33 +33,7 @@ int main(){
 	
 	}while((ans < 1) || (ans > 4));
 	
-	
-	do{
-	cout<< "Kurs no atbilzu variantiem nav pareizs\n Jautajums: 5+5=?"<< endl;
-	cout<< "1. 20/2"<<endl;
-	cout<< "2. 11"<<endl;
-	cout<< "3. 10"<<endl;
-	cout<< "4. 8+2"<<endl;
-	cin>>ans;
-	
-	if((ans < 1) || (ans > 4)){
-		cout<< "Izvelities vienu no iespejam"<<endl;
-	cout<<"*****************************"<<endl;
-	}else{
-		if(ans==2){
+	cout<<score;
 
-	score +=1;
-			cout<<"Paldies par atbildi!"<<endl;
-			cout<<"*****************************"<<endl;
-		}else{
-			cout<<"Paldies par atbildi!" <<endl;
-			cout<<"*****************************"<<endl;
-		}
-		
-	}
-	
-	}while((ans < 1) || (ans > 4));
-	
-cout<<score<<endl;
 return 0;
 	}
