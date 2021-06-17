@@ -182,6 +182,34 @@ do{
 	}while((ans < 1) || (ans > 4));
 	
 	
+	do{
+	cout<< "G.Cik reizes nostradas do-while cikls"<< endl;
+	cout<< "1. Divas"<<endl;
+	cout<< "2. Nevienu"<<endl;
+	cout<< "3. Vismaz vienu"<<endl;
+	cout<< "4. Vienu ja pat nosacijums ir aplams "<<endl;
+		cout<<"Atbilde: ";
+	cin>>ans;
+	
+	if((ans < 1) || (ans > 4)){
+		cout<< "Izvelities vienu no iespejam"<<endl;
+	cout<<"*****************************"<<endl;
+	}else{
+		if(ans==3 || ans==4){
+
+	score +=1;
+			cout<<"Paldies par atbildi!"<<endl;
+			cout<<"*****************************"<<endl;
+		}else{
+			cout<<"Paldies par atbildi!" <<endl;
+			cout<<"*****************************"<<endl;
+		}
+		
+	}
+	
+	}while((ans < 1) || (ans > 4));
+	
+	
 
 cout<<score;
 
