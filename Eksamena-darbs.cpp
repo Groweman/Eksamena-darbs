@@ -125,6 +125,63 @@ do{
 	}
 	
 	}while((ans < 1) || (ans > 4));
+	
+	
+	do{
+	cout<< "E.Do-while ciklam nosacijums raksta!?"<< endl;
+	cout<< "1. Beigas"<<endl;
+	cout<< "2. Sakuma"<<endl;
+	cout<< "3. Pec while"<<endl;
+	cout<< "4. Starp do un while"<<endl;
+		cout<<"Atbilde: ";
+	cin>>ans;
+	
+	if((ans < 1) || (ans > 4)){
+		cout<< "Izvelities vienu no iespejam"<<endl;
+	cout<<"*****************************"<<endl;
+	}else{
+		if(ans==1 || ans==3){
+
+	score +=1;
+			cout<<"Paldies par atbildi!"<<endl;
+			cout<<"*****************************"<<endl;
+		}else{
+			cout<<"Paldies par atbildi!" <<endl;
+			cout<<"*****************************"<<endl;
+		}
+		
+	}
+	
+	}while((ans < 1) || (ans > 4));
+	
+	do{
+	cout<< "F.Kurs no dotajiem nav cikls"<< endl;
+	cout<< "1. Do-while"<<endl;
+	cout<< "2. If"<<endl;
+	cout<< "3. For"<<endl;
+	cout<< "4. Switch"<<endl;
+		cout<<"Atbilde: ";
+	cin>>ans;
+	
+	if((ans < 1) || (ans > 4)){
+		cout<< "Izvelities vienu no iespejam"<<endl;
+	cout<<"*****************************"<<endl;
+	}else{
+		if(ans==2 || ans==4){
+
+	score +=1;
+			cout<<"Paldies par atbildi!"<<endl;
+			cout<<"*****************************"<<endl;
+		}else{
+			cout<<"Paldies par atbildi!" <<endl;
+			cout<<"*****************************"<<endl;
+		}
+		
+	}
+	
+	}while((ans < 1) || (ans > 4));
+	
+	
 
 cout<<score;
 
