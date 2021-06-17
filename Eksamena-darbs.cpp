@@ -209,6 +209,34 @@ do{
 	
 	}while((ans < 1) || (ans > 4));
 	
+	do{
+	cout<< "H.Vai do-while cikla var but citi cikli"<< endl;
+	cout<< "1. Ja"<<endl;
+	cout<< "2. Ir iespejams, bet nav viegli"<<endl;
+	cout<< "3. Nav iespejams"<<endl;
+	cout<< "4. Bus daudz errori "<<endl;
+		cout<<"Atbilde: ";
+	cin>>ans;
+	
+	if((ans < 1) || (ans > 4)){
+		cout<< "Izvelities vienu no iespejam"<<endl;
+	cout<<"*****************************"<<endl;
+	}else{
+		if(ans==1 || ans==2){
+
+	score +=1;
+			cout<<"Paldies par atbildi!"<<endl;
+			cout<<"*****************************"<<endl;
+		}else{
+			cout<<"Paldies par atbildi!" <<endl;
+			cout<<"*****************************"<<endl;
+		}
+		
+	}
+	
+	}while((ans < 1) || (ans > 4));
+	
+
 	
 
 cout<<score;
