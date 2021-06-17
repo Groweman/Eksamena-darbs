@@ -8,7 +8,7 @@ int main(){
 	score = 0;
 	
 	do{
-	cout<< "A.Do-while ir cikls"<< endl;
+	cout<< "A.Do-while ir cikls...?"<< endl;
 	cout<< "1. Kas nostrada vismaz vienu reizi"<<endl;
 	cout<< "2. Ar pecnosacijumu"<<endl;
 	cout<< "3. Ar prieksnosacijumu"<<endl;
@@ -155,7 +155,7 @@ do{
 	}while((ans < 1) || (ans > 4));
 	
 	do{
-	cout<< "F.Kurs no dotajiem nav cikls"<< endl;
+	cout<< "F.Kurs no dotajiem nav cikls?"<< endl;
 	cout<< "1. Do-while"<<endl;
 	cout<< "2. If"<<endl;
 	cout<< "3. For"<<endl;
@@ -183,7 +183,7 @@ do{
 	
 	
 	do{
-	cout<< "G.Cik reizes nostradas do-while cikls"<< endl;
+	cout<< "G.Cik reizes nostradas do-while cikls?"<< endl;
 	cout<< "1. Divas"<<endl;
 	cout<< "2. Nevienu"<<endl;
 	cout<< "3. Vismaz vienu"<<endl;
@@ -210,7 +210,7 @@ do{
 	}while((ans < 1) || (ans > 4));
 	
 	do{
-	cout<< "H.Vai do-while cikla var but citi cikli"<< endl;
+	cout<< "H.Vai do-while cikla var but citi cikli?"<< endl;
 	cout<< "1. Ja"<<endl;
 	cout<< "2. Ir iespejams, bet nav viegli"<<endl;
 	cout<< "3. Nav iespejams"<<endl;
@@ -223,6 +223,38 @@ do{
 	cout<<"*****************************"<<endl;
 	}else{
 		if(ans==1 || ans==2){
+
+	score +=1;
+			cout<<"Paldies par atbildi!"<<endl;
+			cout<<"*****************************"<<endl;
+		}else{
+			cout<<"Paldies par atbildi!" <<endl;
+			cout<<"*****************************"<<endl;
+		}
+		
+	}
+	
+	}while((ans < 1) || (ans > 4));
+	
+	
+	do{
+	cout<< "I.Kurs no siem do-while cikliem nestradas?"<< endl;
+	cout<< "1. do;{ \n pazinojums \n}while(nosacijums);"<<endl;
+	cout<<"*****************************"<<endl;
+	cout<< "2. do{ \n pazinojums \n}while(nosacijums);"<<endl;
+	cout<<"*****************************"<<endl;
+	cout<< "3. do{ \n pazinojums \n}while(nosacijums);"<<endl;
+	cout<<"*****************************"<<endl;
+	cout<< "4. do\n{ \n pazinojums \n}while;(nosacijums);"<<endl;
+	cout<<"*****************************"<<endl;
+		cout<<"Atbilde: ";
+	cin>>ans;
+	
+	if((ans < 1) || (ans > 4)){
+		cout<< "Izvelities vienu no iespejam"<<endl;
+	cout<<"*****************************"<<endl;
+	}else{
+		if(ans==1 || ans==3){
 
 	score +=1;
 			cout<<"Paldies par atbildi!"<<endl;
