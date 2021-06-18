@@ -4,18 +4,19 @@ using namespace std;
 int main(){
 	
 	int ans, score;
-	int nep[10];
-	string jaut[10]{
-	"Do-while cikls ir ...?\n",
-	"Vai do-while cikla aiz nosacijuma liek ';'?\n",
-	"Kura no sim ir pareiza do-while sintakse?\n",
-	"Kads bus si isa koda iznakums\nint x=0;\n{\nx++;\ncout<<x\n}while(x<5);?",
-	"Do-while ciklam nosacijums raksta!?",
-	"Kurs no dotajiem nav cikls?",
-	"Cik reizes nostradas do-while cikls?",
-	"Vai do-while cikla var but citi cikli?",
-	"Kurs no siem do-while cikliem nestradas?",
-	"Kads bus si isa koda iznakums?\nint x=0;\n{\nx++;\ncout<<x\n}while(x<=7);"
+	int nep[10]={0};
+	string jaut[11]{
+		"",
+	"Do-while cikls ir ...?\n*****************************\n",
+	"Vai do-while cikla aiz nosacijuma liek ';'?\n*****************************\n",
+	"Kura no sim ir pareiza do-while sintakse?\n*****************************\n",
+	"Kads bus si isa koda iznakums\nint x=0;\n{\nx++;\ncout<<x\n}while(x<5);?\n*****************************\n",
+	"Do-while ciklam nosacijums raksta!?\n*****************************\n",
+	"Kurs no dotajiem nav cikls?\n*****************************\n",
+	"Cik reizes nostradas do-while cikls?\n*****************************\n",
+	"Vai do-while cikla var but citi cikli?\n*****************************\n",
+	"Kurs no siem do-while cikliem nestradas?\n*****************************\n",
+	"Kads bus si isa koda iznakums?\nint x=0;\n{\nx++;\ncout<<x\n}while(x<=7);\n*****************************\n"
 	};
 	
 	score = 0;
@@ -39,7 +40,7 @@ int main(){
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
-			nep[0]=0;
+			nep[0]=1;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -69,7 +70,7 @@ int main(){
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
-			nep[1]=1;
+			nep[1]=2;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -103,7 +104,7 @@ int main(){
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
-				nep[2]=2;
+				nep[2]=3;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -134,7 +135,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
-				nep[3]=3;
+				nep[3]=4;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -163,7 +164,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
-				nep[4]=4;
+				nep[4]=5;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -191,7 +192,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
-				nep[5]=5;
+				nep[5]=6;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -220,6 +221,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+			nep[6]=7;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -247,6 +249,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+			nep[7]=8;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -279,6 +282,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+			nep[8]=9;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -310,6 +314,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+			nep[9]=10;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -318,10 +323,18 @@ do{
 	
 	}while((ans < 1) || (ans > 4));
 	
-cout<<"Tu esi atbildejis pareizi uz "<<score<<" jautajumiem!"<<endl;
+cout<<"Tu esi atbildejis pareizi uz "<<score<<" jautajumiem no 10!"<<endl;
+cout<<" "<<endl;
 cout<<"Jautajumi uz kuriem tu esi atbildejis nepareizi:"<<endl;
-for(int i=0; i<4;i++){
-	cout<<jaut[nep[i]];
+cout<<" "<<endl;
+int x=0;
+for(int i=0; i<11;i++){
+	if(nep[i]!=0)
+	x++;
+}
+
+for(int x=0; x<10;x++){
+	cout<<jaut[nep[x]];
 }
 
 
