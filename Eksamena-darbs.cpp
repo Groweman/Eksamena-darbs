@@ -4,6 +4,19 @@ using namespace std;
 int main(){
 	
 	int ans, score;
+	int nep[10];
+	string jaut[10]{
+	"Do-while cikls ir ...?\n",
+	"Vai do-while cikla aiz nosacijuma liek ';'?\n",
+	"Kura no sim ir pareiza do-while sintakse?\n",
+	"Kads bus si isa koda iznakums\nint x=0;\n{\nx++;\ncout<<x\n}while(x<5);?",
+	"Do-while ciklam nosacijums raksta!?",
+	"Kurs no dotajiem nav cikls?",
+	"Cik reizes nostradas do-while cikls?",
+	"Vai do-while cikla var but citi cikli?",
+	"Kurs no siem do-while cikliem nestradas?",
+	"Kads bus si isa koda iznakums?\nint x=0;\n{\nx++;\ncout<<x\n}while(x<=7);"
+	};
 	
 	score = 0;
 	
@@ -26,6 +39,7 @@ int main(){
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+			nep[0]=0;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -55,6 +69,7 @@ int main(){
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+			nep[1]=1;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -88,6 +103,7 @@ int main(){
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+				nep[2]=2;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -118,6 +134,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+				nep[3]=3;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -146,6 +163,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+				nep[4]=4;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -173,6 +191,7 @@ do{
 			cout<<"Paldies par atbildi!"<<endl;
 			cout<<"*****************************"<<endl;
 		}else{
+				nep[5]=5;
 			cout<<"Paldies par atbildi!" <<endl;
 			cout<<"*****************************"<<endl;
 		}
@@ -299,7 +318,11 @@ do{
 	
 	}while((ans < 1) || (ans > 4));
 	
-cout<<"Tu esi atbildejis pareizi uz "<<score<<" jautajumiem!";
+cout<<"Tu esi atbildejis pareizi uz "<<score<<" jautajumiem!"<<endl;
+cout<<"Jautajumi uz kuriem tu esi atbildejis nepareizi:"<<endl;
+for(int i=0; i<4;i++){
+	cout<<jaut[nep[i]];
+}
 
 
 return 0;
